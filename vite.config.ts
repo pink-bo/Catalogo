@@ -4,7 +4,8 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 
-const REPO_NAME = 'Catalogo'  
+// CAMBIA ESTO POR EL NOMBRE EXACTO DE TU REPO
+const REPO_NAME = 'Catalogo'  // ← EJEMPLO: si tu repo es "mi-tienda-vue", pon 'mi-tienda-vue'
 
 export default defineConfig({
   plugins: [
@@ -16,5 +17,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: `/${REPO_NAME}/`,  
+  base: `/${REPO_NAME}/`  // NECESARIO PARA GITHUB PAGES
 })
