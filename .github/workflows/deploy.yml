@@ -1,9 +1,12 @@
-# .github/workflows/deploy.yml
 name: Deploy to GitHub Pages
 
 on:
   push:
     branches: [ main ]
+
+permissions:
+  contents: write  # ← AGREGAR ESTO
+  pages: write     # ← AGREGAR ESTO
 
 jobs:
   build-and-deploy:
@@ -15,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # ← CAMBIA A 20
+          node-version: '20'  # ← Node 20 (ya lo tenías)
           cache: 'npm'
 
       - name: Install dependencies
