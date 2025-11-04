@@ -14,5 +14,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/'  // ← SIMPLE PARA HASH MODE
+  base: '/Catalogo/',  // ← ESTO ES TODO
 })
