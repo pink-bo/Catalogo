@@ -52,20 +52,20 @@ export default {
       return this.selectedVariant?.image || this.product.variants[0]?.image
     },
     whatsappLink() {
-      const variant = this.selectedVariant || this.product.variants[0]
-      const colorName = variant.colorName || 'Sin color'
-      const price = this.formatPrice(this.product.price)
-      const sizes = this.product.sizes.join(', ')
-      
-      return `https://wa.me/59162489244?text=
-        Hola!%0A%0A
-        Quiero el producto:%0A
-        *${encodeURIComponent(this.product.name)}*%0A
-        Color: *${encodeURIComponent(colorName)}*%0A
-        Precio: *${encodeURIComponent(price)}*%0A
-        Tallas disponibles: ${encodeURIComponent(sizes)}%0A%0A
-        ¡Gracias!`.replace(/\s+/g, '')
-    }
+  const variant = this.selectedVariant || this.product.variants[0]
+  const colorName = variant.colorName || 'Sin color'
+  const price = this.formatPrice(this.product.price)
+
+  const message = 
+    `Hola!%0A` +
+    `Quiero el producto: ${encodeURIComponent(this.product.name)}%0A` +
+    `Color: ${encodeURIComponent(colorName)}%0A` +
+    `Precio: ${encodeURIComponent(price)}%0A` +
+    `En la siguiente talla:`
+
+  return `https://wa.me/59177708844?text=${message}`
+}
+
   },
   methods: {
     selectVariant(variant) {

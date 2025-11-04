@@ -20,12 +20,11 @@
         <p>Teléfono: +591 77708844</p>
         <h5 class="mb-3 mt-4">Síguenos</h5>
         <div class="d-flex justify-content-center gap-3">
-          <a href="#" class="text-dark">Facebook</a>
-          <a href="#" class="text-dark">Instagram</a>
-          <a href="#" class="text-dark">WhatsApp</a>
+          <a href="https://www.facebook.com/share/1FEWMpDDFj/" class="text-dark">Facebook</a>
+          <a href="https://www.tiktok.com/@pink.bo?_r=1&_t=ZM-916dfmq06fo" class="text-dark">TikTok</a>
+          <a href="https://wa.me/59177708844" class="text-dark">WhatsApp</a>
         </div>
 
-        <p class="mt-4 mb-0">&copy; 2025 Pink. Todos los derechos reservados.</p>
       </div>
     </footer>
   </div>
