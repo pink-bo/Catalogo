@@ -5,8 +5,8 @@ on:
     branches: [ main ]
 
 permissions:
-  contents: write  # ← AGREGAR ESTO
-  pages: write     # ← AGREGAR ESTO
+  contents: write
+  pages: write
 
 jobs:
   build-and-deploy:
@@ -18,7 +18,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: '20'  # ← Node 20 (ya lo tenías)
+          node-version: '20'
           cache: 'npm'
 
       - name: Install dependencies
@@ -33,3 +33,5 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
+          user_name: 'github-actions[bot]'
+          user_email: '41898282+github-actions[bot]@users.noreply.github.com'

@@ -14,5 +14,5 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
-  base: '/Catalogo/'  // ← EXACTO PARA TU REPO
+  base: '/Catalogo',  // ← SIN BARRA FINAL
 })
