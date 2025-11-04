@@ -1,5 +1,5 @@
 // src/router/index.js
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'  // ← HASH
 import Home from '../views/Home.vue'
 import Category from '../views/Category.vue'
 
@@ -9,7 +9,7 @@ const routes = [
 ]
 
 const router = createRouter({
-  history: createWebHistory('/Catalogo'),  // ← BASE AQUÍ
+  history: createWebHashHistory(),  // ← HASH MODE
   routes
 })
 
